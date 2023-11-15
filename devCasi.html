@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VaNVrE7-AO8;
+         controls=0&amp;showinfo=0"
+        frameborder="0"
+        id="vid"
+        allowfullscreen
+>
+</iframe>
+
+
+<script>
+    function openFullscreen() {
+        let vid = document.getElementById("vid");
+        vid.style.position = "absolute";
+        vid.style.width = "100vw";
+        vid.style.height = "100vh";
+        vid.style.top = "Opx";
+        vid.style.left = "Opx";
+    }
+
+    openFullscreen();
+
+    window.addEventListener('orientationchange', () => {
+        openFullscreen();
+    });
+
+</script>
+
+</body>
+</html>
